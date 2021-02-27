@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# Amazon Clone
+
+An Amazon Clone built with React, React Context API, Material UI, deployed with Firebase.
+
+Deployed live at https://clone-540e4.web.app
+
+
+![](SitePreview.jpg)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
