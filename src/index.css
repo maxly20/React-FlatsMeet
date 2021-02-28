@@ -15,3 +15,121 @@ code {
 * {
   margin: 0;
 }
+/* HEADER  */
+.header {
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.header__logo {
+  width: 100px;
+  margin: 0 20px;
+  margin-top: 18px;
+  object-fit: contain;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+.header__optionLineOne {
+  font-size: 10px;
+}
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+}
+.header__basketCount {
+  margin: 0 10px;
+}
+.header__link {
+  color: white;
+  text-decoration: none;
+}
+.header__search {
+  display: flex;
+  flex: 1;
+}
+.header__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+.header__searchIcon {
+  background-color: #cd9042;
+  padding: 5px;
+  height: 22px !important;
+}
+/* HOME  */
+.home {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.home__image {
+  width: 100%;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: -1;
+  margin-bottom: -280px;
+}
+.home__row {
+  display: flex;
+  z-index: 1;
+  margin: 0 5px;
+}
+
+/* CHECKOUT  */
+.checkout {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  max-height: max-content;
+}
+.checkout__ad {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.checkout__title {
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+/* CHECKOUT PRODUCTS  */
+.checkoutProduct {
+  display: flex;
+  margin: 20px 0;
+}
+.checkoutProduct__image {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+}
+.checkoutProduct__info {
+  padding-left: 20px;
+}
+.checkoutProduct__title {
+  font-size: 17px;
+  font-weight: 800;
+}
+.checkoutProduct__rating {
+  display: flex;
+}
+.checkoutProduct__info > button {
+  background: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  margin-top: 10px;
+  color: #111;
+}

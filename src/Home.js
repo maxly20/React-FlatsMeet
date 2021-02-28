@@ -1,5 +1,4 @@
 import React from 'react';
-import './Home.css';
 import Product from './Product';
 
 function Home() {
@@ -32,14 +31,14 @@ function Home() {
         <Product
           id='123456989'
           title='Instant Pot Duo Nova Electric Pressure Cooker, 3L '
-          price={189.00}
+          price={189.0}
           rating={4}
           image={'https://i.ibb.co/L0WvnS5/home-row3-pot.jpg'}
         />
         <Product
           id='123496789'
           title='Apple iPhone 12 Pro Max 256GB - Graphite'
-          price={(2, 399.00)}
+          price={(2, 399.0)}
           rating={5}
           image={'https://i.ibb.co/Lr93YjR/home-row4-iphone.jpg'}
         />
@@ -55,7 +54,7 @@ function Home() {
         <Product
           id='129956789'
           title='Dell Ultrasharp U3818Dw 37.5" Ultra-Wide Quad HD+ Ips Matt Black Curved Computer Monitor Led Display'
-          price={1990.00}
+          price={1990.0}
           rating={5}
           image={'https://i.ibb.co/dKkq5Nn/home-row6-Dell.jpg'}
         />
