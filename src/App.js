@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './App.css';
 import Header from './Header';
 import Home from './Home';
 import Checkout from './Checkout';
@@ -9,10 +8,8 @@ import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
 
 function App() {
-  const [{ basket }, dispatch] = useStateValue();
+  const [dispatch] = useStateValue();
 
-  // useEffect hook
-  // a Piece of code that runs based upon a given condition
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(authUser => {
       if (authUser) {
