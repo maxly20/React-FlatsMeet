@@ -133,3 +133,105 @@ code {
   margin-top: 10px;
   color: #111;
 }
+/* LOGIN */
+.login {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login__container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid lightgray;
+}
+.login__container > h1 {
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+.login__container > form > h5 {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 13px;
+}
+.login__container > form > input {
+  margin-bottom: 5px;
+  height: 30px;
+  background-color: white;
+  width: 98%;
+  border-radius: 3px;
+}
+.login__container > p {
+  margin-top: 15px;
+  font-size: 12px;
+}
+.login__logo {
+  margin: 20px 0;
+  width: 100px;
+  object-fit: contain;
+}
+.login__signInButton {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.login__signInButton:hover {
+  background-color: #f5ce6b;
+}
+.login__registerButton {
+  border: 1px solid;
+  border-color: lightgray;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.login__registerButton:hover {
+  background-color: #fffefe;
+}
+/* PRODUCT */
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  max-height: 400px;
+  min-width: 100px;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+.product__info {
+  height: 100px;
+  margin-bottom: 50px;
+}
+.product__rating {
+  display: flex;
+}
+.product__price {
+  margin-top: 5px;
+}
+.product > img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.product > button {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  cursor: pointer;
+}
