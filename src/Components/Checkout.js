@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../Data/StateProvider';
 import CheckoutProduct from './CheckoutProduct';
 import Subtotal from './Subtotal';
 
