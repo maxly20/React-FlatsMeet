@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from './Header';
-import Home from './Home';
-import Checkout from './Checkout';
+import Header from './Components/Header';
+import Home from './Components/Home';
+import Checkout from './Components/Checkout';
 import Login from './Components/Login';
 import { useStateValue } from './Data/StateProvider';
 import { auth } from './Data/firebase';
@@ -31,7 +31,7 @@ function App() {
       // cleanup operations go in here
       unsubscribe();
     };
-  }, []);
+  }, [dispatch]);
 
   return (
     <Router>
