@@ -15,7 +15,9 @@ code {
 * {
   margin: 0;
 }
-/* HEADER  */
+/*========================== 
+          HEADER  
+==========================*/
 .header {
   background-color: #131921;
   display: flex;
@@ -90,7 +92,9 @@ code {
   margin: 0 5px;
 }
 
-/* CHECKOUT  */
+/*========================== 
+          CHECKOUT  
+==========================*/
 .checkout {
   display: flex;
   padding: 20px;
@@ -106,7 +110,9 @@ code {
   padding: 10px;
   border-bottom: 1px solid lightgray;
 }
-/* CHECKOUT PRODUCTS  */
+/*========================== 
+          CHECK OUT PRODUCTS 
+==========================*/
 .checkoutProduct {
   display: flex;
   margin: 20px 0;
@@ -133,7 +139,9 @@ code {
   margin-top: 10px;
   color: #111;
 }
-/* LOGIN */
+/*========================== 
+          LOGIN  
+==========================*/
 .login {
   background-color: white;
   height: 100vh;
@@ -199,7 +207,9 @@ code {
 .login__registerButton:hover {
   background-color: #fffefe;
 }
-/* PRODUCT */
+/*========================== 
+          PRODUCT  
+==========================*/
 .product {
   display: flex;
   flex-direction: column;
@@ -236,7 +246,9 @@ code {
   cursor: pointer;
 }
 
-/* SUBTOTAL  */
+/*========================== 
+          SUBTOTAL  
+==========================*/
 .subtotal {
   display: flex;
   flex-direction: column;
