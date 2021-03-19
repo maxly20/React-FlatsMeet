@@ -1,56 +1,26 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from './Components/Header';
-import Home from './Components/Home';
-import Checkout from './Components/Checkout';
-import Login from './Components/Login';
-import { useStateValue } from './Data/StateProvider';
-import { auth } from './Data/firebase';
+import "./App.css";
+import Home from "./Home";
+import Header from "./Header";
+import Footer from "./Footer";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import SearchPage from "./SearchPage"
 
 function App() {
-  const [dispatch] = useStateValue();
-
-  useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged(authUser => {
-      if (authUser) {
-        // the user is logged in
-        dispatch({
-          type: 'SET_USER',
-          user: authUser,
-        });
-      } else {
-        // the user is logged out
-        dispatch({
-          type: 'SET_USER',
-          user: null,
-        });
-      }
-    });
-
-    return () => {
-      // cleanup operations go in here
-      unsubscribe();
-    };
-  }, [dispatch]);
-
   return (
-    <Router>
-      <div className='app'>
+    <div className="app">
+      <Router>
+        <Header />
         <Switch>
-          <Route path='/checkout'>
-            <Header />
-            <Checkout />
+          <Route path="/search">
+            <SearchPage />
           </Route>
-          <Route path='/login'>
-            <Login />
-          </Route>
-          <Route path='/'>
-            <Header />
+          <Route path="/">
             <Home />
           </Route>
         </Switch>
-      </div>
-    </Router>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
