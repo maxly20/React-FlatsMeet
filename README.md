@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+A Flat Share website based on Airbnb, built with React.
+
+Deployed live at : https://maxly-react-flatsmeet.netlify.app
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
